@@ -1,6 +1,9 @@
 Minimal Node.js Docker Images (18MB, or 6.7MB compressed)
 ---------------------------------------------------------
 
+This fork uses `janeczku/alpine-kubernetes:3.3` as base image to enable minimal
+node.js deployment on kubernetes clusters.
+
 Versions v5.10.1, v4.4.2, v0.12.13, v0.10.44, and io.js – built on [Alpine Linux](https://alpinelinux.org/).
 
 All versions use the one [mhart/alpine-node](https://hub.docker.com/r/mhart/alpine-node/) repository,
