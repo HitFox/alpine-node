@@ -8,7 +8,7 @@ FROM alpine:edge
 # For base builds
 # ENV CONFIG_FLAGS="--without-npm" RM_DIRS=/usr/include
 # ENV CONFIG_FLAGS="--fully-static --without-npm" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
-ENV CONFIG_FLAGS="--fully-static" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
+ENV CONFIG_FLAGS="" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
 
 RUN apk add --no-cache curl make gcc g++ binutils-gold python linux-headers paxctl libgcc libstdc++ gnupg && \
   gpg --keyserver pool.sks-keyservers.net --recv-keys 9554F04D7259F04124DE6B476D5A82AC7E37093B && \
